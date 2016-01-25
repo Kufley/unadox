@@ -1,0 +1,28 @@
+.navbar{padding-top: 27px;min-height: 118px;}
+.navbar-default {background-color: #f7f7f7;border-color: #d9d9dd;}
+.navbar-default .navbar-nav>li>a {color: #000;font-size: 16px; border: 1px solid transparent}
+
+.navbar-right button{color:#636363;margin-right: 12px; width: 104px; height: 38px; border-radius: 3px; border: 1px solid #d9d9dd;margin-top: 2px;font-size: 14px; }
+.navbar-right button span{float: left;font-size: 13px;margin-top: 2px;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {position:relative; color:#64b299; background-color: #fff; z-index: 11; border: 1px solid #d9d9dd;border-bottom-color: #fff;}
+ul.navbar-nav{margin: 11px 0 0 100px;}
+.glyphicon-menu-down {color:#64b299; font-size: 11px;font-weight: 400;} .servic-arrow{margin-left: 5px;}
+.btn-group{margin-left: 100px;margin-top: 12px;}
+.btn-group .btn{border-color:#d9d9dd;border-radius: 17px; height: 38px; width: 41px;}
+.navbar-right .btn-default:hover, .navbar-right .btn-default:active, .navbar-right .btn-default:focus, .btn-group>.btn.active, .btn-group>.btn:active, .btn-group>.btn:focus, .btn-group>.btn:hover {background-color: #ebebed; outline-style: none;}
+
+.dropdown-menu {top: 51px;z-index: 10;padding:20px 0;border: 1px solid #d9d9dd; border-radius: 0;}
+.dropdown-menu>li>a{color: #000; font-size:16px; font-weight: 400;line-height: 30px;}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {color: #000;text-decoration: none;background-color: #f7f7f7;}
+
+.carousel-indicators {position: absolute;bottom: 5px;  left: 58%;  z-index: 15;  width: auto;  padding-left: 0;  margin-left: 0;  text-align: center;  list-style: none;  }
+.carousel-indicators li {background-color: #fff;  border: 1px solid #d9d9dd;  border-radius: 10px;width: 8px;height: 8px;  }
+.carousel-indicators .active {width: 8px;height: 8px;margin: 1px;background-color: #636363;border: 1px solid #636363;  }
+.carousel-caption {position: absolute;top:0; right: 0;  left: 42%;  z-index: 10;  color: #000;  text-align: left;  text-shadow: none;  padding: 0;  }
+.carousel-caption-title{color:  #000000;font-size: 58px;font-weight: 300;}
+.carousel-caption-title span{font-weight: 700}
+.carousel-caption-description{color:#000;font-size: 14px;font-weight: 400;line-height: 24px;}
+
+.btn-discover{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;position: absolute;  bottom: 0;  left: 42%;}
+
+.features{background-color:  #f7f7f7; text-align: center;}
