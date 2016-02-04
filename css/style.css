@@ -1,3 +1,4 @@
+body{font-family: 'Open Sans', sans-serif;}
 .navbar{padding-top: 27px;min-height: 118px;}
 .navbar-default {background-color: #f7f7f7;border-color: #d9d9dd;}
 .navbar-default .navbar-nav>li>a {color: #000;font-size: 16px; border: 1px solid transparent}
@@ -15,6 +16,7 @@ ul.navbar-nav{margin: 11px 0 0 100px;}
 .dropdown-menu>li>a{color: #000; font-size:16px; font-weight: 400;line-height: 30px;}
 .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {color: #000;text-decoration: none;background-color: #f7f7f7;}
 
+.carousel{margin-top: 80px; margin-bottom: 100px;}
 .carousel-indicators {position: absolute;bottom: 5px;  left: 58%;  z-index: 15;  width: auto;  padding-left: 0;  margin-left: 0;  text-align: center;  list-style: none;  }
 .carousel-indicators li {background-color: #fff;  border: 1px solid #d9d9dd;  border-radius: 10px;width: 8px;height: 8px;  }
 .carousel-indicators .active {width: 8px;height: 8px;margin: 1px;background-color: #636363;border: 1px solid #636363;  }
@@ -23,6 +25,44 @@ ul.navbar-nav{margin: 11px 0 0 100px;}
 .carousel-caption-title span{font-weight: 700}
 .carousel-caption-description{color:#000;font-size: 14px;font-weight: 400;line-height: 24px;}
 
+.btn-phone:hover{outline-style: 0;}
+.btn-phone, .btn-phone:hover{background-color:  #005286;width: 170px; height: 40px;border-radius: 22px;color:#fff;font-size: 14px;}
 .btn-discover{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;position: absolute;  bottom: 0;  left: 42%;}
+.btn-contact{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;margin-bottom: 90px}
+.btn-arrange{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 230px;height: 46px;}
 
-.features{background-color:  #f7f7f7; text-align: center;}
+.border{background-color:  #64b299;width: 50px;height: 1px; margin-bottom: 15px;}
+.btn-arrange:hover, .btn-arrange:active, .btn-arrange:focus,.btn-contact:hover, .btn-contact:active, .btn-contact:focus,.btn-discover:hover, .btn-discover:active, .btn-discover:focus{outline-style: none;border-color:  #003454;  background-color:  #005286; color: #fff;}
+
+.features{background-color:  #f7f7f7; text-align: center;padding: 100px 0;}
+.features-title{color:  #000000;font-size: 22px; font-weight: 700; line-height: 72px}
+.features-p{color:  #000000;font-size: 14px;font-weight: 400;line-height: 24px;text-align: left;}
+
+footer{background-color:#232323; padding: 100px 0 80px;}
+footer h4{color:  #ffffff;font-size: 22px;font-weight: 400;line-height: 35px}
+footer ul a{color: #919191; text-decoration: none; font-size: 14px; font-weight: 400; line-height: 24px;}
+footer ul a:hover,footer ul a:active, footer ul a:focus{color: #fff; text-decoration: none;}
+.padding-0{padding: 0;}
+.social a i{color: #fff;font-size: 30px;font-weight: 400;margin-top: 18px}
+.social a i:hover{color: #64b299;}
+.copy{margin-top:40px;color:#4f4f4f;font-size: 14px;font-weight: 400;line-height: 24px}  .fa-phone{padding-right: 10px;}
+
+.uandox-team{padding: 95px 0 60px;}
+.solution{padding: 95px 0;}
+.solution .row{margin-bottom: 85px;}
+.solution-title{color:  #000;font-size: 36px; font-weight: 600;}
+.media{margin-bottom: 50px}
+.media h4{color:  #000;font-size: 22px;font-weight: 700;}
+.media h5{color:  #000;font-size: 16px;font-weight: 400;}
+.media>.pull-left {padding-right: 35px;}
+
+.contact-text{margin-bottom: 55px}
+.contact h1{color:#000;font-size: 58px;font-weight: 300;}
+.address{list-style: none}
+.address li{margin-bottom: 32px;padding-left: 60px; padding-bottom:52px}
+.address li a{font-size: 16px;font-weight: 400; color: #000;} .address li a:hover{text-decoration: none}
+.address li a span{font-size: 22px;font-weight: 600; color: #000;}
+
+#phone{background: url("../images/phone.png") no-repeat  0px 8px; height: 43px;}
+#email{background: url("../images/mail.png") no-repeat  0px 8px; height: 43px;}
+#pen{background: url("../images/blog.png") no-repeat  0px 8px; height: 43px;}

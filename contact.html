@@ -1,0 +1,184 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <title>Unadox</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+</head>
+<body>
+<nav class="navbar navbar-default">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a  href="#"><img src="images/logo.png" alt="logo"> </a>
+        </div>
+
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Company <span class="glyphicon glyphicon-menu-down"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Solution <span class="glyphicon glyphicon-menu-down"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services<span class="glyphicon glyphicon-menu-down servic-arrow"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-globe"></span></button>
+                <button type="button" class="btn btn-default">en</button>
+                <button type="button" class="btn btn-default">de</button>
+                <button type="button" class="btn btn-default">fr</button>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>Log in</button></li>
+                <li><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> Sign up</button></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div id="googleMap" style="width:500px;height:380px;"></div>
+            <script>
+                var myCenter = new google.maps.LatLng(51.508742,-0.120850);
+                function initialize() {
+                    var mapProp = {
+                        center: myCenter,
+                        zoom:5,
+                        mapTypeId:google.maps.MapTypeId.ROADMAP
+                    };
+                    var map=new google.maps.Map(document.getElementById("googleMap"), mapProp);
+                    var marker=new google.maps.Marker({
+                        position:myCenter,
+                        icon:'images/location_icon.png'
+                    });
+
+                    marker.setMap(map);
+
+                    var infowindow = new google.maps.InfoWindow({
+                        content:"Hello World!"
+                    });
+
+                    google.maps.event.addListener(marker, 'click', function() {
+                        infowindow.open(map,marker);
+                    });
+                }
+                google.maps.event.addDomListener(window, 'load', initialize);
+            </script>
+        </div>
+        <div class="col-sm-6 contact">
+            <h1>Contact Us</h1>
+            <div class="carousel-caption-description contact-text">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                veritatis et quasi architecto beatae vitae dicta sunt explicabo.</div>
+            <ul class="address">
+                <li id="phone"><a href="#">Phone:<br><span>+321-654-876-90</span></a></li>
+                <li id="email"><a href="#">Email:<br><span>unadox@gmail.com</span></a></li>
+                <li id="pen"><a href="#">Blog \ Newsletters<br><span>unadox.comlog</span></a></li>
+
+            </ul>
+        </div>
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2 ">
+                <h4>Company</h4>
+                <div class="border"></div>
+                <ul class="list-unstyled">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Investors relationship</a></li>
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">Clients</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-3 padding-0">
+                <h4>Solution and services</h4>
+                <div class="border"></div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Online claims managment</a></li>
+                    <li><a href="#">Advanced OCR + ML</a></li>
+                    <li><a href="#">Integration & support VAS</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2 ">
+                <h4>Contact</h4>
+                <div class="border"></div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Contact us</a></li>
+                    <li><a href="#">Request a call back</a></li>
+                    <li><a href="#">Newsletter</a></li>
+                    <li><a href="#">Official blog</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+                <h4>Try</h4>
+                <div class="border"></div>
+                <ul class="list-unstyled">
+                    <li><a href="#">Arrange demo or pilot</a></li>
+                    <li><a href="#">Get your free account</a></li>
+                </ul>
+            </div>
+            <div class="col-sm-offset-2 col-sm-1">
+                <ul class="list-unstyled social">
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                    <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fa fa-facebook-square"></i></a></li>
+                </ul>
+            </div>
+
+        </div>
+        <div class="copy">
+            <div class="pull-left">Copyright © 2013-2016, unadox</div>
+            <div class="pull-right"><button class="btn btn-phone"><i class="fa fa-phone"></i>+41 44 586 78 00</button></div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="js/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+
+<script>
+    $('#carousel-example-generic').carousel({
+        interval:2000
+    })
+
+</script>
+</body>
+</html>
