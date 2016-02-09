@@ -1,11 +1,12 @@
 body{font-family: 'Open Sans', sans-serif;}
-.navbar{padding-top: 27px;min-height: 118px;}
-.navbar-default {background-color: #f7f7f7;border-color: #d9d9dd;}
-.navbar-default .navbar-nav>li>a {color: #000;font-size: 16px; border: 1px solid transparent}
+.navbar{padding-top: 20px;min-height: 120px;}
+.navbar-default {background-color: #f7f7f7;border-color: #d9d9dd;border-radius: 0;}
+.navbar-default .navbar-nav>li>a {color: #000;font-size: 16px;padding-bottom: 51px;border: 1px solid transparent;}
+.navbar-default .navbar-nav>li>a:hover{border-bottom: 1px solid #64b299;}
 
 .navbar-right button{color:#636363;margin-right: 12px; width: 104px; height: 38px; border-radius: 3px; border: 1px solid #d9d9dd;margin-top: 2px;font-size: 14px; }
 .navbar-right button span{float: left;font-size: 13px;margin-top: 2px;}
-.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {position:relative; color:#64b299; background-color: #fff; z-index: 11; border: 1px solid #d9d9dd;border-bottom-color: #fff;}
+.navbar-default .navbar-nav>.open>a, .navbar-default .navbar-nav>.open>a:focus, .navbar-default .navbar-nav>.open>a:hover {position:relative; color:#64b299; background-color: #fff; z-index: 11; border: 1px solid #d9d9dd;border-bottom-color: #fff;padding-bottom: 15px;}
 ul.navbar-nav{margin: 11px 0 0 100px;}
 .glyphicon-menu-down {color:#64b299; font-size: 11px;font-weight: 400;} .servic-arrow{margin-left: 5px;}
 .btn-group{margin-left: 100px;margin-top: 12px;}
@@ -25,9 +26,9 @@ ul.navbar-nav{margin: 11px 0 0 100px;}
 .carousel-caption-title span{font-weight: 700}
 .carousel-caption-description{color:#000;font-size: 14px;font-weight: 400;line-height: 24px;}
 
-.btn-phone:hover{outline-style: 0;}
+.btn-phone:hover{outline-style: none;}
 .btn-phone, .btn-phone:hover{background-color:  #005286;width: 170px; height: 40px;border-radius: 22px;color:#fff;font-size: 14px;}
-.btn-discover{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;position: absolute;  bottom: 0;  left: 42%;}
+.btn-discover{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;position: absolute;  bottom: -25%; left: 42%;}
 .btn-contact{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 151px;height: 46px;margin-bottom: 90px}
 .btn-arrange{text-transform:uppercase;color:#fff;font-size: 14px;font-weight: 700;border-radius: 3px;border:1px #47806e solid;  background-color:  #64b299;width: 230px;height: 46px;}
 
@@ -42,7 +43,6 @@ footer{background-color:#232323; padding: 100px 0 80px;}
 footer h4{color:  #ffffff;font-size: 22px;font-weight: 400;line-height: 35px}
 footer ul a{color: #919191; text-decoration: none; font-size: 14px; font-weight: 400; line-height: 24px;}
 footer ul a:hover,footer ul a:active, footer ul a:focus{color: #fff; text-decoration: none;}
-.padding-0{padding: 0;}
 .social a i{color: #fff;font-size: 30px;font-weight: 400;margin-top: 18px}
 .social a i:hover{color: #64b299;}
 .copy{margin-top:40px;color:#4f4f4f;font-size: 14px;font-weight: 400;line-height: 24px}  .fa-phone{padding-right: 10px;}
@@ -66,3 +66,29 @@ footer ul a:hover,footer ul a:active, footer ul a:focus{color: #fff; text-decora
 #phone{background: url("../images/phone.png") no-repeat  0px 8px; height: 43px;}
 #email{background: url("../images/mail.png") no-repeat  0px 8px; height: 43px;}
 #pen{background: url("../images/blog.png") no-repeat  0px 8px; height: 43px;}
+
+.social li{margin: 10px 0 25px;}
+
+#linkedin{background: url("../images/in.png") no-repeat; width: 26px; height: 26px}
+#twitter{background: url("../images/tw.png") no-repeat; width: 27px; height: 22px}
+#facebook-square{background: url("../images/fb.png") no-repeat; width: 26px; height: 27px}
+
+#linkedin:hover{background: url("../images/in_hover.png") no-repeat; width: 26px; height: 26px}
+#twitter:hover{background: url("../images/tw_hover.png") no-repeat; width: 27px; height: 22px}
+#facebook-square:hover{background: url("../images/fb_hover.png") no-repeat; width: 26px; height: 27px}
+
+
+#googleMap{width: 570px;height: 400px; margin-top: 75px; margin-bottom: 85px}
+.contact{margin-top: 45px;}
+#mylabel{color:  #000; font-size: 14px;font-weight: 400;line-height: 18px;}
+
+@media (min-width: 992px) {
+    ul.navbar-nav{margin: 11px 0 0 35px;}
+    .btn-group {margin-left: 20px;}
+    .padding-0{padding: 0}
+    .btn-discover, .carousel-caption {left: 50%;}
+    .carousel-inner {overflow: visible;}
+    .carousel-indicators {bottom: -24%;left: 70%;}
+    .carousel {margin-bottom: 150px;}
+
+}
